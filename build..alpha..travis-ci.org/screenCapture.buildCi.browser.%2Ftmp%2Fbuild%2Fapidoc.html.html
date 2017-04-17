@@ -1,0 +1,464 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/easternbloc/node-stomp-client#readme">stomp-client (v0.9.0)</a>
+</h1>
+<h4>A STOMP protocol implementation in node.js</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client">module stomp-client</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.stomp-client">
+            function <span class="apidocSignatureSpan"></span>stomp-client
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient">
+            function <span class="apidocSignatureSpan">stomp-client.</span>StompClient
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.super_">
+            function <span class="apidocSignatureSpan">stomp-client.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.toString">
+            function <span class="apidocSignatureSpan">stomp-client.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>Errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>frame</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>server</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.frame">module stomp-client.frame</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.frame.StompFrame">
+            function <span class="apidocSignatureSpan">stomp-client.frame.</span>StompFrame
+            <span class="apidocSignatureSpan">(frame)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.parser">module stomp-client.parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.parser.StompFrameEmitter">
+            function <span class="apidocSignatureSpan">stomp-client.parser.</span>StompFrameEmitter
+            <span class="apidocSignatureSpan">(frameValidators)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.server">module stomp-client.server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.server.createStompServer">
+            function <span class="apidocSignatureSpan">stomp-client.server.</span>createStompServer
+            <span class="apidocSignatureSpan">(port)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.toString">module stomp-client.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.toString.toString">
+            function <span class="apidocSignatureSpan">stomp-client.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client" id="apidoc.module.stomp-client">module stomp-client</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.stomp-client" id="apidoc.element.stomp-client.stomp-client">
+        function <span class="apidocSignatureSpan"></span>stomp-client
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StompClient(opts) {
+
+  var address, port, user, pass, protocolVersion, vhost, reconnectOpts, tlsOpts;
+
+  if(arguments.length !== 1 || typeof opts === 'string') {
+    address = opts;
+    port = arguments[1];
+    user = arguments[2];
+    pass = arguments[3];
+    protocolVersion = arguments[4];
+    vhost = arguments[5];
+    reconnectOpts = arguments[6];
+    tlsOpts = arguments[7];
+    if(tlsOpts === true) {
+      tlsOpts = {};
+    }
+  }
+  else {
+    address = opts.address || opts.host;
+    port = opts.port;
+    user = opts.user;
+    pass = opts.pass;
+    protocolVersion = opts.protocolVersion;
+    vhost = opts.vhost;
+    reconnectOpts = opts.reconnectOpts;
+    tlsOpts = opts.tls;
+    // If boolean then TLS options are mixed in with other options
+    if(tlsOpts === true) {
+      tlsOpts = opts;
+    }
+  }
+
+  events.EventEmitter.call(this);
+  this.user = (user || '');
+  this.pass = (pass || '');
+  this.address = (address || '127.0.0.1');
+  this.port = (port || 61613);
+  this.version = (protocolVersion || '1.0');
+  this.subscriptions = {};
+  assert(StompFrameCommands[this.version], 'STOMP version '+this.version+' is not supported');
+  this._stompFrameEmitter = new StompFrameEmitter(StompFrameCommands[this.version]);
+  this.vhost = vhost || null;
+  this.reconnectOpts = reconnectOpts || {};
+  this.tls = tlsOpts;
+  this._retryNumber = 0;
+  this._retryDelay = this.reconnectOpts.delay;
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient" id="apidoc.element.stomp-client.StompClient">
+        function <span class="apidocSignatureSpan">stomp-client.</span>StompClient
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StompClient(opts) {
+
+  var address, port, user, pass, protocolVersion, vhost, reconnectOpts, tlsOpts;
+
+  if(arguments.length !== 1 || typeof opts === 'string') {
+    address = opts;
+    port = arguments[1];
+    user = arguments[2];
+    pass = arguments[3];
+    protocolVersion = arguments[4];
+    vhost = arguments[5];
+    reconnectOpts = arguments[6];
+    tlsOpts = arguments[7];
+    if(tlsOpts === true) {
+      tlsOpts = {};
+    }
+  }
+  else {
+    address = opts.address || opts.host;
+    port = opts.port;
+    user = opts.user;
+    pass = opts.pass;
+    protocolVersion = opts.protocolVersion;
+    vhost = opts.vhost;
+    reconnectOpts = opts.reconnectOpts;
+    tlsOpts = opts.tls;
+    // If boolean then TLS options are mixed in with other options
+    if(tlsOpts === true) {
+      tlsOpts = opts;
+    }
+  }
+
+  events.EventEmitter.call(this);
+  this.user = (user || '');
+  this.pass = (pass || '');
+  this.address = (address || '127.0.0.1');
+  this.port = (port || 61613);
+  this.version = (protocolVersion || '1.0');
+  this.subscriptions = {};
+  assert(StompFrameCommands[this.version], 'STOMP version '+this.version+' is not supported');
+  this._stompFrameEmitter = new StompFrameEmitter(StompFrameCommands[this.version]);
+  this.vhost = vhost || null;
+  this.reconnectOpts = reconnectOpts || {};
+  this.tls = tlsOpts;
+  this._retryNumber = 0;
+  this._retryDelay = this.reconnectOpts.delay;
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.super_" id="apidoc.element.stomp-client.super_">
+        function <span class="apidocSignatureSpan">stomp-client.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.toString" id="apidoc.element.stomp-client.toString">
+        function <span class="apidocSignatureSpan">stomp-client.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Check required (if specified)
+if (headerConstruct.hasOwnProperty('required') &amp;&amp; headerConstruct.required === true) {
+  if (frameHeaders.indexOf(header) === -1) {
+    return {
+      isValid: false,
+      message: 'Header "' + header + '" is required for '+this.command,
+      details: 'Frame: ' + this.<span class="apidocCodeKeywordSpan">toString</span>()
+    };
+  }
+}
+
+// Check regex of header value (if specified)
+if (headerConstruct.hasOwnProperty('regex') &amp;&amp; frameHeaders.indexOf(header) &gt; -1) {
+  if (!this.headers[header].match(headerConstruct.regex)) {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.frame" id="apidoc.module.stomp-client.frame">module stomp-client.frame</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.frame.StompFrame" id="apidoc.element.stomp-client.frame.StompFrame">
+        function <span class="apidocSignatureSpan">stomp-client.frame.</span>StompFrame
+        <span class="apidocSignatureSpan">(frame)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StompFrame(frame) {
+  if (frame === undefined) {
+    frame = {};
+  }
+  this.command = frame.command || '';
+  this.headers = frame.headers || {};
+  this.body = frame.body || '';
+  this.contentLength = -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.parser" id="apidoc.module.stomp-client.parser">module stomp-client.parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.parser.StompFrameEmitter" id="apidoc.element.stomp-client.parser.StompFrameEmitter">
+        function <span class="apidocSignatureSpan">stomp-client.parser.</span>StompFrameEmitter
+        <span class="apidocSignatureSpan">(frameValidators)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StompFrameEmitter(frameValidators) {
+  events.EventEmitter.call(this);
+  this.state = ParserStates.COMMAND;
+  this.frame = new StompFrame();
+  this.frames = [];
+  this.buffer = '';
+  this.frameValidators = frameValidators || {};
+  this.commands = Object.keys(this.frameValidators);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.server" id="apidoc.module.stomp-client.server">module stomp-client.server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.server.createStompServer" id="apidoc.element.stomp-client.server.createStompServer">
+        function <span class="apidocSignatureSpan">stomp-client.server.</span>createStompServer
+        <span class="apidocSignatureSpan">(port)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createStompServer = function (port) {
+  return new StompServer(port);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.toString" id="apidoc.module.stomp-client.toString">module stomp-client.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.toString.toString" id="apidoc.element.stomp-client.toString.toString">
+        function <span class="apidocSignatureSpan">stomp-client.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Check required (if specified)
+if (headerConstruct.hasOwnProperty('required') &amp;&amp; headerConstruct.required === true) {
+  if (frameHeaders.indexOf(header) === -1) {
+    return {
+      isValid: false,
+      message: 'Header "' + header + '" is required for '+this.command,
+      details: 'Frame: ' + this.<span class="apidocCodeKeywordSpan">toString</span>()
+    };
+  }
+}
+
+// Check regex of header value (if specified)
+if (headerConstruct.hasOwnProperty('regex') &amp;&amp; frameHeaders.indexOf(header) &gt; -1) {
+  if (!this.headers[header].match(headerConstruct.regex)) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
