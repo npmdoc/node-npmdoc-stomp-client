@@ -1,4 +1,7 @@
-# api documentation for  [stomp-client (v0.9.0)](https://github.com/easternbloc/node-stomp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-stomp-client.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stomp-client) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stomp-client.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stomp-client)
+# npmdoc-stomp-client
+
+#### basic api documentation for  [stomp-client (v0.9.0)](https://github.com/easternbloc/node-stomp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-stomp-client.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stomp-client) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stomp-client.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stomp-client)
+
 #### A STOMP protocol implementation in node.js
 
 [![NPM](https://nodei.co/npm/stomp-client.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/stomp-client)
@@ -68,7 +71,8 @@
         "lint": "[ -z \"$LINTFILES\" ] && LINTFILES='**'; ./node_modules/jshint/bin/jshint ${LINTFILES}",
         "test": "nodeunit test"
     },
-    "version": "0.9.0"
+    "version": "0.9.0",
+    "bin": {}
 }
 ```
 
