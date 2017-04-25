@@ -90,16 +90,13 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.toString">
-            function <span class="apidocSignatureSpan">stomp-client.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>Errors</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>Errors</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>StompClient.prototype</span>
 
         </li>
 
@@ -118,6 +115,110 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.</span>server</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.StompClient">module stomp-client.StompClient</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.StompClient">
+            function <span class="apidocSignatureSpan">stomp-client.</span>StompClient
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.super_">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stomp-client.StompClient.</span>Errors</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.StompClient.prototype">module stomp-client.StompClient.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.ack">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>ack
+            <span class="apidocSignatureSpan">(messageId, subscription, transaction)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.connect">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>connect
+            <span class="apidocSignatureSpan">(connectedCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.disconnect">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>disconnect
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.nack">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>nack
+            <span class="apidocSignatureSpan">(messageId, subscription, transaction)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.onConnect">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>onConnect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.publish">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>publish
+            <span class="apidocSignatureSpan">(queue, message, headers)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.subscribe">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>subscribe
+            <span class="apidocSignatureSpan">(queue, _headers, _callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.StompClient.prototype.unsubscribe">
+            function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>unsubscribe
+            <span class="apidocSignatureSpan">(queue, headers)</span>
+            </a>
 
         </li>
 
@@ -156,19 +257,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.stomp-client.server.createStompServer">
             function <span class="apidocSignatureSpan">stomp-client.server.</span>createStompServer
             <span class="apidocSignatureSpan">(port)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.stomp-client.toString">module stomp-client.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.stomp-client.toString.toString">
-            function <span class="apidocSignatureSpan">stomp-client.</span>toString
-            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -316,42 +404,519 @@
 
 
 
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.StompClient" id="apidoc.module.stomp-client.StompClient">module stomp-client.StompClient</a></h1>
+
+
     <h2>
-        <a href="#apidoc.element.stomp-client.toString" id="apidoc.element.stomp-client.toString">
-        function <span class="apidocSignatureSpan">stomp-client.</span>toString
+        <a href="#apidoc.element.stomp-client.StompClient.StompClient" id="apidoc.element.stomp-client.StompClient.StompClient">
+        function <span class="apidocSignatureSpan">stomp-client.</span>StompClient
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StompClient(opts) {
+
+  var address, port, user, pass, protocolVersion, vhost, reconnectOpts, tlsOpts;
+
+  if(arguments.length !== 1 || typeof opts === &#x27;string&#x27;) {
+    address = opts;
+    port = arguments[1];
+    user = arguments[2];
+    pass = arguments[3];
+    protocolVersion = arguments[4];
+    vhost = arguments[5];
+    reconnectOpts = arguments[6];
+    tlsOpts = arguments[7];
+    if(tlsOpts === true) {
+      tlsOpts = {};
+    }
+  }
+  else {
+    address = opts.address || opts.host;
+    port = opts.port;
+    user = opts.user;
+    pass = opts.pass;
+    protocolVersion = opts.protocolVersion;
+    vhost = opts.vhost;
+    reconnectOpts = opts.reconnectOpts;
+    tlsOpts = opts.tls;
+    // If boolean then TLS options are mixed in with other options
+    if(tlsOpts === true) {
+      tlsOpts = opts;
+    }
+  }
+
+  events.EventEmitter.call(this);
+  this.user = (user || &#x27;&#x27;);
+  this.pass = (pass || &#x27;&#x27;);
+  this.address = (address || &#x27;127.0.0.1&#x27;);
+  this.port = (port || 61613);
+  this.version = (protocolVersion || &#x27;1.0&#x27;);
+  this.subscriptions = {};
+  assert(StompFrameCommands[this.version], &#x27;STOMP version &#x27;+this.version+&#x27; is not supported&#x27;);
+  this._stompFrameEmitter = new StompFrameEmitter(StompFrameCommands[this.version]);
+  this.vhost = vhost || null;
+  this.reconnectOpts = reconnectOpts || {};
+  this.tls = tlsOpts;
+  this._retryNumber = 0;
+  this._retryDelay = this.reconnectOpts.delay;
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.super_" id="apidoc.element.stomp-client.StompClient.super_">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.</span>super_
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-// Check required (if specified)
-if (headerConstruct.hasOwnProperty(&#x27;required&#x27;) &#x26;&#x26; headerConstruct.required === true) {
-  if (frameHeaders.indexOf(header) === -1) {
-    return {
-      isValid: false,
-      message: &#x27;Header &#x22;&#x27; + header + &#x27;&#x22; is required for &#x27;+this.command,
-      details: &#x27;Frame: &#x27; + this.<span class="apidocCodeKeywordSpan">toString</span>()
-    };
-  }
-}
-
-// Check regex of header value (if specified)
-if (headerConstruct.hasOwnProperty(&#x27;regex&#x27;) &#x26;&#x26; frameHeaders.indexOf(header) &#x3e; -1) {
-  if (!this.headers[header].match(headerConstruct.regex)) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
 
 
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stomp-client.StompClient.prototype" id="apidoc.module.stomp-client.StompClient.prototype">module stomp-client.StompClient.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.ack" id="apidoc.element.stomp-client.StompClient.prototype.ack">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>ack
+        <span class="apidocSignatureSpan">(messageId, subscription, transaction)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ack = function (messageId, subscription, transaction) {
+  sendAckNack.call(this, &#x27;ACK&#x27;, messageId, subscription, transaction);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## stomp.publish(queue, message, [headers])
+
+- `queue`: queue to publish to
+- `message`: message to publish, a string or buffer
+- `headers`: headers to add to the PUBLISH message
+
+## stomp.<span class="apidocCodeKeywordSpan">ack</span>(messageId, subscription, [transaction]),
+## stomp.nack(messageId, subscription, [transaction])
+
+- `messageId`: the id of the message to ack/nack
+- `subscription`: the id of the subscription
+- `transaction`: optional transaction name
+
+## Property: `stomp.publishable` (boolean)
+...</pre></li>
+    </ul>
 
 
 
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.connect" id="apidoc.element.stomp-client.StompClient.prototype.connect">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>connect
+        <span class="apidocSignatureSpan">(connectedCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect = function (connectedCallback, errorCallback) {
+  var self = this;
 
+  //reset this field.
+  delete this._disconnectCallback;
+
+  if (errorCallback) {
+    self.on(&#x27;error&#x27;, errorCallback);
+  }
+
+  var connectEvent;
+
+  if(this.tls) {
+    self.stream = tls.connect(self.port, self.address, this.tls);
+    connectEvent = &#x27;secureConnect&#x27;;
+  }
+  else {
+    self.stream = net.createConnection(self.port, self.address);
+    connectEvent = &#x27;connect&#x27;;
+  }
+
+  self.stream.on(connectEvent, self.onConnect.bind(this));
+
+  self.stream.on(&#x27;error&#x27;, function(err) {
+    process.nextTick(function() {
+      //clear all of the stomp frame emitter listeners - we don&#x27;t need them, we&#x27;ve disconnected.
+      self._stompFrameEmitter.removeAllListeners();
+    });
+    if (self._retryNumber &#x3c; self.reconnectOpts.retries) {
+      if (self._retryNumber === 0) {
+        //we&#x27;re disconnected, but we&#x27;re going to try and reconnect.
+        self.emit(&#x27;reconnecting&#x27;);
+      }
+      self._reconnectTimer = setTimeout(function() {
+        self.connect();
+      }, self._retryNumber++ * self.reconnectOpts.delay)
+    } else {
+      if (self._retryNumber === self.reconnectOpts.retries) {
+        err.message += &#x27; [reconnect attempts reached]&#x27;;
+        err.reconnectionFailed = true;
+      }
+      self.emit(&#x27;error&#x27;, err);
+    }
+  });
+
+  if (connectedCallback) {
+    self.on(&#x27;connect&#x27;, connectedCallback);
+  }
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Super basic example
+
+var Stomp = require(&#x27;stomp-client&#x27;);
+var destination = &#x27;/queue/someQueueName&#x27;;
+var client = new Stomp(&#x27;127.0.0.1&#x27;, 61613, &#x27;user&#x27;, &#x27;pass&#x27;);
+
+client.<span class="apidocCodeKeywordSpan">connect</span>(function(sessionId) {
+    client.subscribe(destination, function(body, headers) {
+      console.log(&#x27;This is the body of a message on the subscribed queue:&#x27;, body);
+    });
+
+    client.publish(destination, &#x27;Oh herrow&#x27;);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.disconnect" id="apidoc.element.stomp-client.StompClient.prototype.disconnect">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>disconnect
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disconnect = function (callback) {
+  var self = this;
+
+  //just a bit of housekeeping. Remove the no-longer-useful reconnect timer.
+  if (self._reconnectTimer) {
+    clearTimeout(self._reconnectTimer);
+  }
+
+  if (this.stream) {
+    //provide a default no-op function as the callback is optional
+    this._disconnectCallback = callback || function() {};
+
+    var frame = new StompFrame({
+      command: &#x27;DISCONNECT&#x27;
+    }).send(this.stream);
+
+    process.nextTick(function() {
+      self.stream.end();
+    });
+  }
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Connect to the STOMP server. If the callbacks are provided, they will be
+attached on the `&#x27;connect&#x27;` and `&#x27;error&#x27;` event, respectively.
+
+## virtualhosts
+
+If using virtualhosts to namespace your queues, you must pass a `version` header of &#x27;1.1&#x27; otherwise it is ignored.
+
+## stomp.<span class="apidocCodeKeywordSpan">disconnect</span>(callback)
+
+Disconnect from the STOMP server. The callback will be executed when disconnection is complete.
+No reconnections should be attempted, nor errors thrown as a result of this call.
+
+## stomp.subscribe(queue, [headers,] callback)
+
+- `queue`: queue to subscribe to
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.nack" id="apidoc.element.stomp-client.StompClient.prototype.nack">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>nack
+        <span class="apidocSignatureSpan">(messageId, subscription, transaction)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nack = function (messageId, subscription, transaction) {
+  sendAckNack.call(this, &#x27;NACK&#x27;, messageId, subscription, transaction);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## stomp.publish(queue, message, [headers])
+
+- `queue`: queue to publish to
+- `message`: message to publish, a string or buffer
+- `headers`: headers to add to the PUBLISH message
+
+## stomp.ack(messageId, subscription, [transaction]),
+## stomp.<span class="apidocCodeKeywordSpan">nack</span>(messageId, subscription, [transaction])
+
+- `messageId`: the id of the message to ack/nack
+- `subscription`: the id of the subscription
+- `transaction`: optional transaction name
+
+## Property: `stomp.publishable` (boolean)
+Returns whether or not the connection is currently writable. During normal operation
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.onConnect" id="apidoc.element.stomp-client.StompClient.prototype.onConnect">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>onConnect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onConnect = function () {
+
+  var self = this;
+
+  // First set up the frame parser
+  var frameEmitter = self._stompFrameEmitter;
+
+  self.stream.on(&#x27;data&#x27;, function(data) {
+    frameEmitter.handleData(data);
+  });
+
+  self.stream.on(&#x27;end&#x27;, function() {
+    if (self._disconnectCallback) {
+      self._disconnectCallback();
+    } else {
+      self.stream.emit(&#x27;error&#x27;, new Error(&#x27;Server has gone away&#x27;));
+    }
+  });
+
+  frameEmitter.on(&#x27;MESSAGE&#x27;, function(frame) {
+    var subscribed = self.subscriptions[frame.headers.destination];
+    // .unsubscribe() deletes the subscribed callbacks from the subscriptions,
+    // but until that UNSUBSCRIBE message is processed, we might still get
+    // MESSAGE. Check to make sure we don&#x27;t call .map() on null.
+    if (subscribed) {
+      subscribed.listeners.map(function(callback) {
+        callback(frame.body, frame.headers);
+      });
+    }
+    self.emit(&#x27;message&#x27;, frame.body, frame.headers);
+  });
+
+  frameEmitter.on(&#x27;CONNECTED&#x27;, function(frame) {
+    if (self._retryNumber &#x3e; 0) {
+      //handle a reconnection differently to the initial connection.
+      self.emit(&#x27;reconnect&#x27;, frame.headers.session, self._retryNumber);
+      self._retryNumber = 0;
+    } else {
+      self.emit(&#x27;connect&#x27;, frame.headers.session);
+    }
+  });
+
+  frameEmitter.on(&#x27;ERROR&#x27;, function(frame) {
+    var er = new Error(frame.headers.message);
+    // frame.headers used to be passed as er, so put the headers on er object
+    _extend(er, frame.headers);
+    self.emit(&#x27;error&#x27;, er, frame.body);
+  });
+
+  frameEmitter.on(&#x27;parseError&#x27;, function(err) {
+    // XXX(sam) err should be an Error object to more easily track the
+    // point of error detection, but it isn&#x27;t, so create one now.
+    var er = new Error(err.message);
+    if (err.details) {
+      er.details = err.details;
+    }
+    self.emit(&#x27;error&#x27;, er);
+    self.stream.destroy();
+  });
+
+  // Send the CONNECT frame
+  var headers = {
+    &#x27;login&#x27;: self.user,
+    &#x27;passcode&#x27;: self.pass
+  };
+
+  if(this.vhost &#x26;&#x26; this.version === &#x27;1.1&#x27;)
+    headers.host = this.vhost;
+
+  var frame = new StompFrame({
+    command: &#x27;CONNECT&#x27;,
+    headers: headers
+  }).send(self.stream);
+
+  //if we&#x27;ve just reconnected, we&#x27;ll need to re-subscribe
+  for (var queue in self.subscriptions) {
+    new StompFrame({
+      command: &#x27;SUBSCRIBE&#x27;,
+      headers: self.subscriptions[queue].headers
+    }).send(self.stream);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.publish" id="apidoc.element.stomp-client.StompClient.prototype.publish">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>publish
+        <span class="apidocSignatureSpan">(queue, message, headers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">publish = function (queue, message, headers) {
+  headers = _extend({}, headers);
+  headers.destination = queue;
+  new StompFrame({
+    command: &#x27;SEND&#x27;,
+    headers: headers,
+    body: message
+  }).send(this.stream);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var client = new Stomp(&#x27;127.0.0.1&#x27;, 61613, &#x27;user&#x27;, &#x27;pass&#x27;);
+
+    client.connect(function(sessionId) {
+        client.subscribe(destination, function(body, headers) {
+          console.log(&#x27;This is the body of a message on the subscribed queue:&#x27;, body);
+        });
+
+        client.<span class="apidocCodeKeywordSpan">publish</span>(destination, &#x27;Oh herrow&#x27;);
+    });
+
+The client comes in two forms, a standard or secure client. The example below is
+using the standard client. To use the secure client simply change
+`StompClient` to `SecureStompClient`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.subscribe" id="apidoc.element.stomp-client.StompClient.prototype.subscribe">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>subscribe
+        <span class="apidocSignatureSpan">(queue, _headers, _callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subscribe = function (queue, _headers, _callback) {
+  // Allow _headers or callback in any order, for backwards compat: so headers
+  // is whichever arg is not a function, callback is whatever is left over.
+  var callback;
+  if (typeof _headers === &#x27;function&#x27;) {
+    callback = _headers;
+    _headers = null;
+  }
+  if (typeof _callback === &#x27;function&#x27;) {
+    callback = _callback;
+    _callback = null;
+  }
+  // Error now, preventing errors thrown from inside the &#x27;MESSAGE&#x27; event handler
+  assert(callback, &#x27;callback is mandatory on subscribe&#x27;);
+
+  var headers = _extend({}, _headers || _callback);
+  headers.destination = queue;
+  if (!(queue in this.subscriptions)) {
+    this.subscriptions[queue] = {
+      listeners: [],
+      headers: headers
+    };
+    new StompFrame({
+      command: &#x27;SUBSCRIBE&#x27;,
+      headers: headers
+    }).send(this.stream);
+  }
+  this.subscriptions[queue].listeners.push(callback);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Super basic example
+
+    var Stomp = require(&#x27;stomp-client&#x27;);
+    var destination = &#x27;/queue/someQueueName&#x27;;
+    var client = new Stomp(&#x27;127.0.0.1&#x27;, 61613, &#x27;user&#x27;, &#x27;pass&#x27;);
+
+    client.connect(function(sessionId) {
+        client.<span class="apidocCodeKeywordSpan">subscribe</span>(destination, function(body, headers) {
+          console.log(&#x27;This is the body of a message on the subscribed queue:&#x27;, body);
+        });
+
+        client.publish(destination, &#x27;Oh herrow&#x27;);
+    });
+
+The client comes in two forms, a standard or secure client. The example below is
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stomp-client.StompClient.prototype.unsubscribe" id="apidoc.element.stomp-client.StompClient.prototype.unsubscribe">
+        function <span class="apidocSignatureSpan">stomp-client.StompClient.prototype.</span>unsubscribe
+        <span class="apidocSignatureSpan">(queue, headers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unsubscribe = function (queue, headers) {
+  headers = _extend({}, headers);
+  headers.destination = queue;
+  new StompFrame({
+    command: &#x27;UNSUBSCRIBE&#x27;,
+    headers: headers
+  }).send(this.stream);
+  delete this.subscriptions[queue];
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## stomp.subscribe(queue, [headers,] callback)
+
+- `queue`: queue to subscribe to
+- `headers`: headers to add to the SUBSCRIBE message
+- `callback`: will be called with message body as first argument,
+  and header object as the second argument
+
+## stomp.<span class="apidocCodeKeywordSpan">unsubscribe</span>(queue, [headers])
+
+- `queue`: queue to unsubscribe from
+- `headers`: headers to add to the UNSUBSCRIBE message
+
+## stomp.publish(queue, message, [headers])
+
+- `queue`: queue to publish to
+...</pre></li>
+    </ul>
 
 
 </div>
@@ -422,40 +987,23 @@ if (headerConstruct.hasOwnProperty(&#x27;regex&#x27;) &#x26;&#x26; frameHeaders.
     <li>description and source-code<pre class="apidocCodePre">createStompServer = function (port) {
   return new StompServer(port);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.stomp-client.toString" id="apidoc.module.stomp-client.toString">module stomp-client.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.stomp-client.toString.toString" id="apidoc.element.stomp-client.toString.toString">
-        function <span class="apidocSignatureSpan">stomp-client.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+var QUEUE = &#x27;/queue/thing&#x27;;
 
-// Check required (if specified)
-if (headerConstruct.hasOwnProperty(&#x27;required&#x27;) &#x26;&#x26; headerConstruct.required === true) {
-  if (frameHeaders.indexOf(header) === -1) {
-    return {
-      isValid: false,
-      message: &#x27;Header &#x22;&#x27; + header + &#x27;&#x22; is required for &#x27;+this.command,
-      details: &#x27;Frame: &#x27; + this.<span class="apidocCodeKeywordSpan">toString</span>()
-    };
-  }
+if (process.argv.length &#x3e; 2) {
+if (process.argv[2]) {
+  SERVER_PORT = process.argv[2];
 }
+} else {
+var stompServer = require(&#x27;../lib/server&#x27;).<span class="apidocCodeKeywordSpan">createStompServer</span>(SERVER_PORT).listen
+();
+}
+var StompClient = require(&#x27;../lib/client&#x27;).StompClient;
 
-// Check regex of header value (if specified)
-if (headerConstruct.hasOwnProperty(&#x27;regex&#x27;) &#x26;&#x26; frameHeaders.indexOf(header) &#x3e; -1) {
-  if (!this.headers[header].match(headerConstruct.regex)) {
+var stompClient = new StompClient(SERVER_ADDRESS, SERVER_PORT, &#x27;&#x27;, &#x27;&#x27;, &#x27;1.0&#x27;);
+
+stompClient.connect(function() {
+stompClient.subscribe(QUEUE, function(data, headers){
 ...</pre></li>
     </ul>
 
